@@ -1,0 +1,186 @@
+<html>
+	<head>
+		<title>Hacker_School</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<style type="text/css">
+			body{ background:black; color:white; }
+			h1{font-size:80; color:#33ff33; text-align:center;}
+			a:link{text-decoration:none; color:white;}
+			a:visited{color:white;}
+			a:hover{text-decoration:underline; color:red;}
+			a.top { position: fixed;left: 50%;bottom: 20px; display: none; font-size:30px; color:red;}
+			#title_link{text-decoration:none;}
+			#menu_box{ border-color:#5AD2FF;background-color:#282828;border-collapse:collapse;border-width:thin;}
+			#chose_box{border: 1px solid #33FF33; border-collapse:collapse;}
+			#main_body{background-color:#282828; border-collapse:collapse; margin-bottom:10;}
+			#main_body_a{margin:0;padding-top:10;padding-left:40;padding-bottom:0; border-color:white;border-collapse:collapse;}
+			#main_body_a_text{font-size:20;}
+			#saying{ color:#33FF33; text-align:center; font-size:40px; }
+		</style>
+		<style media="screen">
+			*{margin: 0; padding: 0;}
+			.dropmenu ul ul{position:absolute; display: none;}
+	          	.dropmenu ul ul li{display: block; background-color:navy; color: white;}
+		        .dropmenu ul li{display: inline-block; margin-left: -30px;}
+			.dropmenu ul li a{display: block; width: 150px; color: white; line-height: 43px; text-decoration: none;}
+			.dropmenu ul li a:hover{color:red; background-color:white; text-decoration:underline;}
+		</style>
+	</head>
+	<body>	
+		<center>
+			<a href="main.html" id="title_link"><font face="MV Boli"><h1>Hacker_School</h1></font><br></a>
+		<table border=1 width=1400 height=150 align=center id="menu_box">
+			<tr>
+				<td width=400>
+					<img src="image\hack.jpg" height=150 width=300">
+				</td>
+				<td width=800>
+					<table border=0 width=800 align=center>
+						<tr>
+							<td width=150 align=center>
+								<table border=1 height=130 align=center id="chose_box">
+									<tr>
+										<td width=150 align=center>
+											<a href="basic_knowledge.html"><img src="image\book_ch.png" height=70><br>기초지식</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width=150 align=center><a href="community.html"><img src="image\community.png" height=70><br>커뮤니티</a></td>
+							<td width=150 align=center><a href="wargame.html"><img src="image\e.png" height=70><br>워게임</a></td>
+							<td width=150 align=center>
+								<div class="dropmenu">
+									<ul id="dm_ul">
+										<li><img src=image\security.png height=70><br>
+												<img src=image\d.png height=15> 해킹
+											<ul>
+												<li><a href="network.html">Network</a></li>
+												<li><a href="forensic.html">Forensic</a></li>
+												<li><a href="web.html">Web</a></li>
+												<li><a href="pwnable.html">Pwnable</a></li>
+												<li><a href="reversing.html">Reversing</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width=300>
+					<a href="http://www.casper.or.kr" target="_blank"><img src="image\hack.gif" alt="Support HackThisSite - Advertise with us!" title="casper" border=0 width=300 height=150></a>
+				</td>
+			</tr>
+		</table><br><br><br>
+		<table border=0 id="main_body" width=1300 height=900>
+			<tr>
+				<td>
+					<table border=1 width=1300 height=300 id="main_body_a_text">
+						<tr>
+							<td rowspan=2 width=550 id="main_body_b_text" valign=top>
+								<br><font size=10 color="33ff33">(1) C 언어</font><br><br>
+								&nbsp;&nbsp;컴퓨터를 전공한다면 기본적으로 배워야하는 언어<br><br>
+								&nbsp;&nbsp;포너블의 버퍼오버플로우에서 사용된다<br><br>
+								&nbsp;&nbsp;개념도 중요하지만 예제를 풀어 보는 것이 더 중요
+							</td>
+							<td width=350 height=80 align=center id="main_body_b_text">
+								- 관련 책
+							</td>
+							<td height=80 align=center id="main_body_b_text">
+								- 관련 툴 : <font size=10 color="#5ABEF5">Visual Stdio</font>
+							</td>
+						</tr>
+						<tr>
+							<td width=350 align=center>
+								<img src="image\cl.jpg" width=300 height=230>
+							</td>
+							<td align=center>
+								<img src="image\visual.png" width=300 height=230> 
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table border=1 width=1300 height=300 id="main_body_a_text">
+						<tr>
+							<td rowspan=2 width=550 valign=top>
+								<br><font size=10 color="33ff33">(2) 리눅스 언어</font><br><br>
+								&nbsp;&nbsp;리눅스 언어는 사용되는 빈도가 높아 중요하다<br><br>
+								&nbsp;&nbsp;네트워크, 웹, 리버싱등 모든 분야에 쓰인다<br><br>
+								&nbsp;&nbsp;워게임 풀이에도 사용된다
+							</td>
+							<td width=350 height=80 align=center>
+								 - 관련 책
+							</td>
+							<td height=80 align=center>
+								- 관련 툴 : <font size=10 color="#5ABEF5">Kali</font>
+							</td>
+						</tr>
+						<tr>
+							<td width=350 align=center>
+								<img src="image\linux_book.png" width=300 height=230>
+							</td>
+							<td align=center>
+								<img src="image\kali_icon.jpg" width=300 height=230>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table border=1 width=1300 height=300 id="main_body_a_text">
+						<tr>
+							<td rowspan=2 width=550 valign=top>
+								 <br><font size=10 color="33ff33">(3) Html, Css, Javascript</font><br><br>
+								&nbsp;&nbsp;웹 점검( Sert 활동 )에 꼭 필요한 언어<br><br>
+								&nbsp;&nbsp;워게임 풀이에서도 자주 만나는 언어<br><br>
+								&nbsp;&nbsp;최근 javascipt가 해킹기법으로 쓰이며 중요해졌다
+							</td>
+							<td width=350 height=80 align=center>
+								- 관련 책
+							</td>
+							<td height=80 align=center>
+								 - 관련 툴 : <font size=10 color="#5ABEF5">Ubuntu</font>
+							</td>
+						</tr>
+						<tr>
+							<td width=350 align=center>
+								<img src="image\web_book.jpg" width=300 height=230>
+							</td>
+							<td align=center>
+							<img src="image\ubuntu_icon.png" width=300 height=230>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<p id="saying">Hackers are not born. It is only made.</p><br><br><br><br>
+		<a href="#" class="top">- Top -</a>
+		</center>
+		<script type="text/javascript">
+			$(".dropmenu ul li").hover(function(){
+				$(this).find("ul").stop().fadeToggle(300);
+			});
+		</script>
+		<script>
+			$( document ).ready( function() {
+				$( window ).scroll( function() {
+					if ( $( this ).scrollTop() > 200 ) {
+						$( '.top' ).fadeIn();
+					} else {
+						$( '.top' ).fadeOut();
+					}
+				} );
+				$( '.top' ).click( function() {
+					$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+					return false;
+				} );
+			} );
+		</script>
+	</body>
+</html>
