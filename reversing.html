@@ -1,0 +1,168 @@
+<html>
+	<head>
+		<title>Hacker_School</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			body{ background:#000000; color:white; }
+			h1{font-size:80; color:#33ff33; text-align:center; margin-bottom:0px;}
+			a:link{text-decoration:none; color:white;}
+			a:visited{color:white;}
+			a:hover{text-decoration:underline; color:red;}
+			a.top { position: fixed;left: 50%;bottom: 20px; display: none; font-size:30px; color:red;}
+			#title_link{text-decoration:none;}
+			#menu_box{ border-color:#5ABEF5; margin-top:0px; background-color:#282828; border-collapse:collapse;}
+			#chose_box{border: 1px solid #33FF33; border-collapse:collapse;}
+			#top_menu_box{margin:0px;padding:0px; background-color:#282828;border-collapse:collapse;border-color:#5ABEF5;}
+			#main_body{background-color:#282828; border-color:#5ABEF5; border-collapse:collapse;margin-bottom:100;}
+			#main_body_b{margin:0;padding-top:10;padding-left:40;padding-bottom:0;border-collapse:collapse; border-color:white;}
+			#main_body_b_text{font-size:20;}
+		
+		</style>
+	</head>
+	<body>
+		<table border=1 width=450 height=50 align=left id="top_menu_box">
+			<tr>	
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="basic_knowledge.html"><img src="image\book_ch.png" width=25 height=20> 기초지식</a></td> 
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="community.html"><img src="image\community_ch.png" width=30 height=20> 커뮤니티</a></td>   
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="wargame.html"><img src="image\wargame.png" width=30 height=20> 워게임</a></td>
+			</tr>
+		</table><br>
+		<center>
+			<a href="main.html" id="title_link"><font face="MV Boli"><h1>Hacker_School</h1></font></a><br>
+		<table border=1 width=1500 height=150 align=center id="menu_box">
+			<tr>
+				<td width=225>
+					<img src="image\hack.jpg" height=150 width=225">
+				</td>
+				<td width=950>
+					<table border=0 width=950 align=center>
+						<tr>
+							<td width=150 align=center><a href="network.html"><img src="image\net.png" height=80><br>network</a></td>
+							<td width=150 align=center><a href="forensic.html"><img src="image\frensic.png" height=80><br>forensic</a></td>
+							<td width=150 align=center><a href="web.html"><img src="image\web.png" height=70><br>web</a></td>
+							<td width=150 align=center><a href="pwnable.html"><img src="image\pwnable.png" height=70><br>pwnable</a></td>
+							<td width=150 align=center>
+								<table border=1 height=130 id="chose_box">
+									<tr>
+										<td width=150 align=center>
+											<a href="reversing.html"><img src="image\reversing_ch.png" height=70><br>reversing</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width=225>
+					<a href="http://www.casper.or.kr" target="_blank"><img src="image\hack.gif" alt="Support HackThisSite - Advertise with us!" title="casper" border=0 width=325 height=150></a>
+				</td>
+			</tr>
+		</table><br><br><br>
+		<table border=0 id="main_body" width=1300 height=1030>
+			<tr>
+				<td height=200>
+					<table border=0 width=1300 height=200>
+						<tr>
+							<td valign=top id="main_body_b_text" align=center>
+								<br><font size=10 color="33ff33">리버싱이란?</font><br><br>
+								&nbsp;&nbsp;프로그램을 분석하여 구조와 기능, 적용 기술을 역으로 따라가며 분석하고 재현하는 것<br>
+								&nbsp;&nbsp;분석방법에는 정적분석과 동적분석이 있다.<br>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height=300>
+					<table border=1 width=1300 id="main_body_b" height=300>
+						<tr>
+							<td rowspan=2 width=550 id="main_body_b_text" valign=top>
+								<br><font size=10 color="33ff33"> (1) 정적 분석</font><br><br>
+								<ul type="square">
+									<li>파일을 실행시키지 않고 겉모습을 관찰.</li><br>
+									<li>파일의 종류, 크기, 헤더, 등록정보 등의<br> 다양한 내용 확인.</li>
+							</td>
+							<td colspan=2 height=80 align=center id="main_body_b_text">
+								- 관련 툴 : <font size=10 color="#5ABEF5">HexEditor</font>
+							</td>
+						</tr>
+						<tr>
+							<td width=350>
+								<img src="image\hxd.png" width=350 height=230> 
+							</td>
+							<td>
+								<ul type="circle" id="main_body_b_text">
+									<li>16진수 값(Hex)을 편집할 수 있음</li><br>
+									<li>파일 시그니처 확인 및 편집</li><br>
+									<li>해시값 확인</li><br>
+							</td>
+						</tr>
+					</table>
+				</td>
+			<tr>
+				<td height=300>
+					<table border=1 width=1300 id="main_body_b" height=300>
+						<tr>
+							<td rowspan=2 width=550 id="main_body_b_text" valign=top>
+								<br><font size=10 color="33ff33"> (2) 동적 분석</font><br><br>
+								<ul type="square">
+									<li>정적분석을 토대로 분석한다.</li><br>
+									<li>파일을 직접 실행해 파일, 레지스트리, 네트워크 등을<br> 관찰하여 프로그램의 행위를 분석한다</li>
+							</td>
+							<td colspan=2 height=80 align=center id="main_body_b_text">
+								 - 관련 툴 : <font size=10 color="#5ABEF5">OllyDbg</font>
+							</td>
+						</tr>
+							<td width=350>
+								<img src="image\ollybug.png" width=350 height=230>
+							</td>
+							<td>
+								<ul type="circle" id="main_body_b_text">
+									<li>바이너리 코드를 분석을 위한 디버거<br>소스코드 없이 실행파일만으로 분석</li><br>
+									<li>어셈블리 코드와 레지스터 상태,<br> 스택등을 확인 할 수 있다.</li>
+							</td>
+						<tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height=200 >
+					<table border=0 width=1300 height=230> 
+						<tr>
+							<td width=300>
+								<img src="image\marware.jpg" width=300 height=230>
+							</td>
+							<td valign=top width=700 align=center id="main_body_b_text">
+								<br><font size=10 color="33ff33">(3) 활용 방향</font><br><br>
+								포렌식과 같이 범죄현장 분석에 사용되고 있다.<br>
+								트로이 목마, 웜 바이러스, 스파이웨어 같은 악성코드 분석에도 사용한다.
+							</td>
+							<td width=300>
+								<img src="image\malware.gif" width=300 height=230>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<a href="#" class="top">- Top -</a>
+		</center>
+		<script>
+		      $( document ).ready( function() {
+			      $( window ).scroll( function() {
+				      if ( $( this ).scrollTop() > 200 ) {
+					      $( '.top' ).fadeIn();
+				      } else {
+					      $( '.top' ).fadeOut();
+				      }
+			      } );
+			      $( '.top' ).click( function() {
+				      $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+					                return false;
+			      } );
+		      } );
+		</script>
+	</body>
+</html>
