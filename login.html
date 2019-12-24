@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<title>Hacker_School</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{ background:black; }
+			h2{font-size:80; color:#33ff33; text-align:center;}
+			#title_link{text-decoration:none;}
+			 #main_body_text{color:#33FF33;border-collapse:collapse;}
+			h1{ font-size:15pt; color:#33FF33;}
+			.table_submit { background-color:green; border-radius:20px; border-style:solid; }
+			a.submit:link{text-decoration:none; color:#33ff33;}
+			a.submit:visited{color:#33ff33;}
+			 #main_body{background-color:#282828; border-collapse:collapse; margin-bottom:200;}
+			 #main_body_a{padding-top:10;padding-left:40;}
+			 #submit_body{background-color:black; border-collapse:collapse; }
+		</style>
+	</head>
+	<body>
+		<center>
+			<div id="title_box">
+				<a href="main.html" id="title_link"><font face="MV Boli"><h2>Hacker_School</h2></font></a>
+			</div>
+			<table border=1 width=1000 height=500 id="main_body">
+				<tr>
+					<td>
+						<table border=1 width=1000 height=100 id="main_body_text">
+							<tr>
+								<td align=center width=650><font style="font-size:30pt;"><strong>회원가입</strong></font></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border=0 width=1000 height=400 id="main_body_a">
+							<tr>
+								<td>
+									<h1>아이디(이메일)</h1>
+									<form>
+										<input type="text" name="id" size=36 style="height:30;"><font color=white> @</font> 
+										<input type="text" name="email" size=28i style="height:30;">
+										<select name="email_list" style="width:100; height:30">
+											<option value="" selected>직접입력</option>
+											<option value="naver">naver.com</option>
+											<option value="google">gmail.com</option>
+											<option value="nate">nate.com</option>
+										</select>
+									</form>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<h1>비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호 확인</h1>
+								<form>
+									<input type="password" name="pass" size=40 style="height:30;">&nbsp;&nbsp;
+									<input type="password" name="pass_check" size=40 style="height:30;">
+								</form>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h1>회원정보</h1>
+									<form>
+										<font color=white>이름 : &nbsp;</font><input type="text" name="name" size=20 style="height:20;">
+										<font color=white>&nbsp;생년월일 : &nbsp;</font><select name="year" style="width:100; height:30">
+											<option value="" selected>년도</option>
+											<option value="2000">2000</option>
+											<option value="2001">2001</option>
+											<option value="2002">2002</option>
+											<option value="2003">2003</option>
+											<option value="2004">2004</option>
+										</select>
+										<select name="month" style="width:60; height:30;">
+											<option value="" selected>월</option>
+											<option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="010">10</option>
+											<option value="011">11</option>
+											<option value="012">12</option>
+										</select>
+										<select name="day" style="width:60; height:30;">
+											<option value="" selected>일</option>
+											<option value="1">01</option>
+											<option value="2">02</option>
+											<option value="3">03</option>
+											<option value="4">04</option>
+											<option value="5">05</option>
+											<option value="6">06</option>
+											<option value="7">07</option>
+											<option value="8">08</option>
+											<option value="9">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+										<font color=white>&nbsp;전화번호:&nbsp;</font>
+										<select name="first_number" style="width:60; height:30;">
+											<option value="010" selected>010</option>
+											<option value="011">011</option>
+											<option value="016">016</option>
+											<option value="017">017</option>
+											<option value="018">018</option>
+										</select>
+										<font color=white>-&nbsp;</font><input type="text" name="second_number" size=5 style="height:30;">
+										<font color=white>-&nbsp;</font><input type="text" name="second_number" size=5 style="height:30;">
+									</form>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>
+									<table border=0 id="submit_body">
+										<tr>
+											<td align=center width=200 height=50>
+												<a href="main.html" class="submit">동의하고 가입완료</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>
