@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<title>Hacker_School</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			body{ background:#000000; color:white; }
+			h1{font-size:80; color:#33ff33; text-align:center; margin-bottom:0px;}
+			a:link{text-decoration:none; color:white;}
+			a:visited{color:white;}
+			a:hover{text-decoration:underline; color:red;}
+			a.top { position: fixed;left: 50%;bottom: 20px; display: none; font-size:30px; color:red;}
+			#title_link{text-decoration:none;}
+			#menu_box{ border-color:#5ABEF5; margin-top:0px; background-color:#282828; border-collapse:collapse;}
+			#chose_box{border: 1px solid #33FF33; border-collapse:collapse;}
+			#top_menu_box{margin:0px;padding:0px; background-color:#282828;border-collapse:collapse;border-color:#5ABEF5;}
+			#main_body{background-color:#282828; border-color:#5ABEF5; border-collapse:collapse; margin-bottom:100;}
+			#main_body_b{margin:0;padding-top:10;padding-left:40;padding-bottom:0;border-collapse:collapse; border-color:white;}
+			#main_body_b_text{font-size:20;}
+		
+		</style>
+	</head>
+	<body>
+		<table border=1 width=450 height=50 align=left id="top_menu_box">
+			<tr>
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="basic_knowledge.html"><img src="image\book_ch.png" width=25 height=20> 기초지식</a></td>
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="community.html"><img src="image\community_ch.png" width=30 height=20> 커뮤니티</a></td>
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="wargame.html"><img src="image\wargame.png" width=30 height=20> 워게임</a></td> 
+			</tr>
+		</table>
+		<br><center>
+		<a href="main.html" id="title_link"><font face="MV Boli"><h1>Hacker_School</h1></font></a><br>
+		<table border=1 width=1500 height=150 align=center id="menu_box">
+			<tr>
+				<td width=225>
+					<img src="image\hack.jpg" height=150 width=225">
+				</td>
+				<td width=950>
+					<table border=0 width=950 align=center>
+						<tr>
+							<td width=150 align=center>
+								<table border=1 height=130 id="chose_box">
+									<tr>
+										<td width=150 align=center>
+											<a href="network.html"><img src="image\net_2.png" height=80><br>network</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width=150 align=center><a href="forensic.html"><img src="image\frensic.png" height=80><br>forensic</a></td>
+							<td width=150 align=center><a href="web.html"><img src="image\web.png" height=70><br>web</a></td>
+							<td width=150 align=center><a href="pwnable.html"><img src="image\pwnable.png" height=70><br>pwnable</a></td>
+							<td width=150 align=center><a href="reversing.html"><img src="image\reversing.png" height=70><br>reversing</a></td>
+						</tr>
+					</table>
+				</td>
+				<td width=225>
+					<a href="http://www.casper.or.kr" target="_blank"><img src="image\hack.gif" alt="Support HackThisSite - Advertise with us!" title="casper" border=0 width=325 height=150></a>
+				</td>
+			</tr>
+		</table><br><br><br>
+		<table border=0 id="main_body" width=1300 height=1030>
+			<tr>
+				<td height=200>
+					<table border=0 width=1300 height=200>
+						<tr>
+							<td valign=top id="main_body_b_text" align=center>
+								<br><font size=10 color="33ff33">네트워크 해킹이란?</font><br><br>
+								&nbsp;&nbsp;네트워크 상에서 발생되는 해킹을 의미한다.<br>
+								&nbsp;&nbsp;크게 Sniffing, Spoofing, DDoS공격 세가지 절차 로 나눌 수 있다.<br>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height=300>
+					<table border=1 width=1300 id="main_body_b" height=300>
+						<tr>
+							<td rowspan=2 width=550 id="main_body_b_text" valign=top>
+								<br><font size=10 color="33ff33">(1) 스니핑 ( Sniffing )</font><br><br>
+								<ul type="square">
+									<li>'킁킁 거리다'의 의미로 네트워크 흐름의 중간에서<br>도청 및 감시하는 공격 행위<br></li><br>
+									<li>패스워드 등의 데이터를 통신하는 과정에서 중간에<br>도청하여 확인 할 수 있어서 위험함<br></li>
+							</td>
+							<td colspan=2 height=80 align=center id="main_body_b_text">
+								- 관련 툴 : <font size=10 color="#5ABEF5">Nmap</font>
+							</td>
+						</tr>
+						<tr>
+							<td width=350>
+								<img src="image\nmap.png" width=350 height=230> 
+							</td>
+							<td>
+								<ul type="circle" id="main_body_b_text">
+									<li>해킹 대상의 시스템의 "정보 수집"</li><br>
+									<li>어떤 서비스(ex : telnet, ssh, ftp등)가<br> 작동 되고 있는지 수집</li><br>
+
+									<li>어떤 포트들이 열려있는지 내용을<br> 수집</li><br>
+							</td>
+						</tr>
+					</table>
+				</td>
+			<tr>
+				<td height=300>
+					<table border=1 width=1300 id="main_body_b" height=300>
+						<tr>
+							<td rowspan=2 width=550 id="main_body_b_text" valign=top>
+								<br><font size=10 color="33ff33">(2) 스푸핑 ( Spoofing )</font><br><br>
+								<ul type="square">
+									<li>'변조시키다'의 의미로 사용자가 원하는 행위를 속여<br>비정상적인 행동을 하는 행위<br></li><br>
+									<li>공격 예) DNS 스푸핑, ARP 스푸핑<br></br>
+							</td>
+							<td colspan=2 height=80 align=center id="main_body_b_text">
+								- 관련 툴 : <font size=10 color="#5ABEF5">Wire Shark</font> 
+							</td>
+						</tr>
+						<tr>
+							<td width=350 align=center>
+								<img src="image\wireshark.png" width=350 height=230>
+							</td>
+							<td valign=top align=center id="main_body_b_text">
+								패킷 캡처 => 로그인 암호 확인<br> 
+								<img src="image\pcat.png" width=320 height=180>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height=200 >
+					<table border=0 width=1300 height=230> 
+						<tr>
+							<td width=300>
+								<img src="image\ddos.png" width=300 height=230>
+							</td>
+							<td valign=top width=700 align=center id="main_body_b_text">
+								<br><font size=10 color="33ff33">(3) DDOS</font><br><br>
+								엄청난 양의 패킷을 보내 네트워크를 과부하 시켜<br>
+								해당 서비스를 이용자들이 사용할 수 없게 만드는 공격<br>
+							</td>
+							<td width=300>
+								<img src="image\ddos_2.jpg" width=300 height=230>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<a href="#" class="top">- Top -</a>
+		</center>
+		<script>
+		      $( document ).ready( function() {
+			      $( window ).scroll( function() {
+				      if ( $( this ).scrollTop() > 200 ) {
+					      $( '.top' ).fadeIn();
+				      } else {
+					      $( '.top' ).fadeOut();
+				      }
+			      } );
+			      $( '.top' ).click( function() {
+				      $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+					                return false;
+			      } );
+		      } );
+		</script>
+	</body>
+</html>
