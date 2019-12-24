@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>Hacker_School</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<style type="text/css">
+			body{ background:#000000; color:#ffffff}
+			h1{font-size:80; color:#33ff33; text-align:center;}
+			h2{font-size:40; color:red;}
+			a:link{text-decoration:none;}
+			a:visited{color:white;}
+			a:hover{text-decoration:underline; color:red;}
+			.warnning{font-size:20; color:red;}
+			.hack_menu{font-size:40px; text-align:center;}
+			#title_link{text-decoration:none;}
+			#menu_box{ border-color:#5AD2FF;background-color:#282828;border-collapse:collapse;border-width:thin;}
+			#user_id{ width:120px; height:35px;}
+			#user_pw{ width:120px; height:35px;}
+			#box{margin-left:20px; padding:0px;}
+			#box_hack{margin-bottom:0px;}
+			#saying{ color:#33FF33; text-align:center; font-size:40px; }
+			#title_box{ background-color:#000000; }
+		</style>
+		<style media="screen">
+			*{margin: 0; padding: 0;}
+			.dropmenu ul ul{position:absolute; display: none;}
+	          	.dropmenu ul ul li{display: block; background-color:navy; color: white;}
+		        .dropmenu ul li{display: inline-block; margin-left: -30px;}
+			.dropmenu ul li a{display: block; width: 150px; color: white; line-height: 43px; text-decoration: none;}
+			.dropmenu ul li a:hover{color:red; background-color:white; text-decoration:underline;}
+		</style>
+	</head>
+	<body>	
+		<center>
+		<div id="title_box">
+		<a href="main.html" id="title_link"><font face="MV Boli"><h1>Hacker_School</h1></font></a>
+		</div><br><br>
+		<table border=0 width=1400 height=150 align=center>
+			<tr>
+				<td width=300><img src="image\hack.jpg" height=150 width=300></td>
+				<td width=800 valign=top align=center>
+					<h2>!! WARNING !!</h2><br>
+					<ul type="none" class="warnning">
+						<li>이 과정은 충분히 악용의 소지가 있는 과정입니다.</li>
+						<li>악용은 절대적으로 허용하지 않습니다.</li>
+						<li>악용으로 일어난 법적 책임은 웹사이트와 관련 없습니다.</li>
+						<li>경고문을 읽는 순간 동의 한 것으로 간주 됩니다.</li>
+					</ul>
+				</td>
+				<td width=300><img src="image\illuminaty.jpeg" height=150 width=300></td>
+			</tr>
+		</table><br><br>
+		<table border=1 width=1500 height=150 align=center id="menu_box">
+			<tr>
+				<td width=400>
+					<table width=250 id="box">
+						<tr>
+							<td>
+								<form>			
+									<input type="text" id="user_id" placeholder="ID">
+								</form>
+							</td>
+							<td width=100>
+								<a href="main_1.html"><img src="image\b.gif" width=100 height=40></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form>
+									<input type="password" id="user_pw" placeholder="PW">
+								</form>
+							</td>
+							<td width=100>
+								<a href="login.html"><img src="image\a.gif" width=100 height=40></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width=800>
+					<table border=0 width=800 align=center>
+						<tr>
+							<td width=150 align=center><a href="basic_knowledge.html"><img src="image\book.png" height=70><br>기초지식</a></td>
+							<td width=150 align=center><a href="community.html"><img src="image\community.png" height=70><br>커뮤니티</a></td>
+							<td width=150 align=center><a href="wargame.html"><img src="image\e.png" height=70><br>워게임</a></td>
+							<td width=150 align=center>
+								<div class="dropmenu">
+									<ul id="dm_ul">
+										<li><img src=image\security.png height=70><br>
+												<img src=image\d.png height=15> 해킹
+											<ul>
+												<li><a href="network.html">Network</a></li>
+												<li><a href="forensic.html">Forensic</a></li>
+												<li><a href="web.html">Web</a></li>
+												<li><a href="pwnable.html">Pwnable</a></li>
+												<li><a href="reversing.html">Reversing</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width=300>
+					<a href="http://www.casper.or.kr" target="_blank"><img src="image\hack.gif" alt="Support HackThisSite - Advertise with us!" title="casper" border=0 width=400 height=150></a>
+				</td>
+			</tr>
+		</table><br>
+		<table border=0 width=1400 height=90 id="box_hack">
+			<tr class="hack_menu" valign=bottom>
+				<td width=280><a href="network.html" style="color:#5AD2FF;"> < network > </a></td>
+				<td width=280><a href="forensic.html" style="color:#5AD2FF;"> < forensic > </a></td>
+				<td width=280><a href="web.html" style="color:#5AD2FF;"> < web > </a></td>
+				<td width=280><a href="pwnable.html" style="color:#5AD2FF;"> < pwnable > </a></td>
+				<td width=280><a href="reversing.html" style="color:#5AD2FF;"> < reversing > </a></td>
+			</tr>
+		</table><br>
+		<img src=image\hacker.png width=1200 height=600>
+		</center>
+		<p id="saying">Hackers are not born. It is only made.</p>
+		<script type="text/javascript">
+			$(".dropmenu ul li").hover(function(){
+				$(this).find("ul").stop().fadeToggle(300);
+			});
+		</script>
+	</body>
+</html>
