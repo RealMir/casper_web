@@ -1,0 +1,168 @@
+<html>
+	<head>
+		<title>Hacker_School</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			body{ background:#000000; color:white; }
+			h1{font-size:80; color:#33ff33; text-align:center; margin-bottom:0px;}
+			a:link{text-decoration:none; color:white;}
+			a:visited{color:white;}
+			a:hover{text-decoration:underline; color:red;}
+			a.top { position: fixed;left: 50%;bottom: 20px; display: none; font-size:30px; color:red;}
+			#title_link{text-decoration:none;}
+			#menu_box{ border-color:#5ABEF5; margin-top:0px; background-color:#282828; border-collapse:collapse;}
+			#chose_box{border: 1px solid #33FF33; border-collapse:collapse;}
+			#top_menu_box{margin:0px;padding:0px; background-color:#282828;border-collapse:collapse;border-color:#5ABEF5;}
+			#main_body{background-color:#282828; border-color:#5ABEF5; border-collapse:collapse;margin-bottom:100;}
+			#main_body_b{margin:0;padding-top:10;padding-left:40;padding-bottom:0;border-collapse:collapse; border-color:white;}
+			#main_body_b_text{font-size:20;}
+		
+		</style>
+	</head>
+	<body>
+		<table border=1 width=450 height=50 align=left id="top_menu_box">
+			<tr>
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="basic_knowledge.html"><img src="image\book_ch.png" width=25 height=20> 기초지식</a></td>
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="community.html"><img src="image\community_ch.png" width=30 height=20> 커뮤니티</a></td>
+				<td width=150 align=center valign=center onMouseOver="this.style.backgroundColor='white'" onMouseOut="this.style.backgroundColor='#282828'"> <a href="wargame.html"><img src="image\wargame.png" width=30 height=20> 워게임</a></td>
+			</tr>
+		</table><br>
+		<center>
+			<a href="main.html" id="title_link"><font face="MV Boli"><h1>Hacker_School</h1></font></a><br>
+		<table border=1 width=1500 height=150 align=center id="menu_box">
+			<tr>
+				<td width=225>
+					<img src="image\hack.jpg" height=150 width=225">
+				</td>
+				<td width=950>
+					<table border=0 width=950 align=center>
+						<tr>
+							<td width=150 align=center><a href="network.html"><img src="image\net.png" height=80><br>network</a></td> 
+							<td width=150 align=center>
+								<table border=1 height=130 id="chose_box">
+									<tr>
+										<td width=150 align=center>
+											<a href="forensic.html"><img src="image\frensic_ch.png" height=80><br>forensic</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width=150 align=center><a href="web.html"><img src="image\web.png" height=70><br>web</a></td>
+							<td width=150 align=center><a href="pwnable.html"><img src="image\pwnable.png" height=70><br>pwnable</a></td>
+							<td width=150 align=center><a href="reversing.html"><img src="image\reversing.png" height=70><br>reversing</a></td>
+						</tr>
+					</table>
+				</td>
+				<td width=225>
+					<a href="http://www.casper.or.kr" target="_blank"><img src="image\hack.gif" alt="Support HackThisSite - Advertise with us!" title="casper" border=0 width=325 height=150></a>
+				</td>
+			</tr>
+		</table><br><br><br>
+		<table border=0 id="main_body" width=1300 height=1030>
+			<tr>
+				<td height=200>
+					<table border=0 width=1300 height=200>
+						<tr>
+							<td valign=top id="main_body_b_text" align=center>
+								<br><font size=10 color="33ff33">포렌식이란?</font><br><br>
+								&nbsp;&nbsp;디지털 데이터를 근거로 삼아 해당 디지털 기기에서 발생한 사실을 알기 위해 조사 분석하는 것<br>
+								&nbsp;&nbsp;조사분석에는 데이터 복구, 암호복호화(패스워드 크랙),데이터 검색 등이 있다.<br>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height=300>
+					<table border=1 width=1300 id="main_body_b" height=300>
+						<tr>
+							<td rowspan=2 width=550 id="main_body_b_text" valign=top>
+								<br><font size=10 color="33ff33"> (1) 데이터 복구</font><br><br>
+								<ul type="square">
+									<li>데이터가 삭제되었을 경우 복구한다.</li><br>
+									<li>기본적인 파일 삭제는 메타정보와 데이터의 링크만<br> 사라져서 원본데이터는 살아있어 복구가 가능하다.</li>
+							</td>
+							<td colspan=2 height=80 align=center id="main_body_b_text">
+								- 관련 툴 : <font size=10 color="#5ABEF5">HexEditor</font>
+							</td>
+						</tr>
+						<tr>
+							<td width=350>
+								<img src="image\hxd.png" width=350 height=230> 
+							</td>
+							<td>
+								<ul type="circle" id="main_body_b_text">
+									<li>16진수 값(Hex)을 편집할 수 있음</li><br>
+									<li>파일 시그니처 확인 및 편집</li><br>
+									<li>해시값 확인</li><br>
+							</td>
+						</tr>
+					</table>
+				</td>
+			<tr>
+				<td height=300>
+					<table border=1 width=1300 id="main_body_b" height=300>
+						<tr>
+							<td rowspan=2 width=550 id="main_body_b_text" valign=top>
+								<br><font size=10 color="33ff33"> (2) 데이터 검색</font><br><br>
+								<ul type="square">
+									<li>사용자가 은닉한 정보를 식별한다.</li><br>
+									<li>데이터 은닉 기법 : 원본 파일을 다른 형식의 파일안에<br> 숨기는 기법인 스테가노 그래피 기법이 있다.</li>
+							</td>
+							<td colspan=2 height=80 align=center id="main_body_b_text">
+								- <font size=10 color="#5ABEF5">스테가노 그래피</font> ( 실습 화면 )
+							</td>
+						</tr>
+						<tr>
+							<td width=350 align=center id="main_body_b_text">
+								의심되는 .gif형식의 사진을 확보<br>
+								<img src="image\forensic_root.png" width=320 height=180>
+							<td align=center id="main_body_b_text">
+								HxD 돌려본 결과 => xss코드를 가져 위험<br> 
+								<img src="image\forensic_result.png" width=320 height=180>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height=200 >
+					<table border=0 width=1300 height=230> 
+						<tr>
+							<td width=300>
+								<img src="image\forensic_1.jpg" width=300 height=230>
+							</td>
+							<td valign=top width=700 align=center id="main_body_b_text">
+								<br><font size=10 color="33ff33">(3) 활용 방향</font><br><br>
+								경찰이 범죄에서 디지털 증거를 획득하기 위해 사용<br>
+								대표적 예시) 최순실 태블릿, 승리 / 정준영 카톡
+							</td>
+							<td width=300>
+								<img src="image\forensic_1.gif" width=300 height=230>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<a href="#" class="top">- Top -</a>
+		</center>
+		<script>
+		      $( document ).ready( function() {
+			      $( window ).scroll( function() {
+				      if ( $( this ).scrollTop() > 200 ) {
+					      $( '.top' ).fadeIn();
+				      } else {
+					      $( '.top' ).fadeOut();
+				      }
+			      } );
+			      $( '.top' ).click( function() {
+				      $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+					                return false;
+			      } );
+		      } );
+		</script>
+	</body>
+</html>
