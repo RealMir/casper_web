@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hacker_School</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<style type="text/css">
+			body{ background:black; color:white; }
+			h1{font-size:80px; color:#33ff33; text-align:center;}
+			a:link{text-decoration:none;}
+			a:visited{color:white;}
+			a:hover{text-decoration:underline; color:red;}
+			a.pagination:link{text-decoration:none; font-size:20px;}
+			a.pagination:visited{color:#33ff33;}
+			#title_link{text-decoration:none;}
+			#menu_box{ border-color:#5AD2FF;background-color:#282828;border-collapse:collapse;border-width:thin;}
+			#chose_box{border: 1px solid #33FF33; border-collapse:collapse;}
+			#main_body{background-color:#282828; border-collapse:collapse; margin-bottom:10px;}
+			#main_body_a{margin:0;padding-top:10;padding-left:40;padding-bottom:0; border-color:white;border-collapse:collapse;}
+			#main_body_a_text{font-size:20;}
+			#board_text{ color:#33ff33;}
+			a.top { position: fixed;left: 50%;bottom: 20px; display: none; font-size:30px; color:red;}
+			#saying{ color:#33FF33; text-align:center; font-size:40px; }
+		</style>
+		<style media="screen">
+			*{margin: 0; padding: 0;}
+			.dropmenu ul ul{position:absolute; display: none;}
+	          	.dropmenu ul ul li{display: block; background-color:navy; color: white;}
+		        .dropmenu ul li{display: inline-block; margin-left: -30px;}
+			.dropmenu ul li a{display: block; width: 150px; color: white; line-height: 43px; text-decoration: none;}
+			.dropmenu ul li a:hover{color:red; background-color:white; text-decoration:underline;}
+		</style>
+	</head>
+	<body>	
+		<center>
+		<a href="main.html" id="title_link"><font face="MV Boli"><h1>Hacker_School</h1></font><br></a>
+		<table border=1 width=1400 height=150 align=center id="menu_box">
+			<tr>
+				<td width=400>
+					<img src="image\hack.jpg" height=150 width=300">
+				</td>
+				<td width=800>
+					<table border=0 width=800 align=center>
+						<tr>
+							<td width=150 align=center><a href="basic_knowledge.html"><img src="image\knowledge.png" height=70><br>기초지식</a></td>
+							<td width=150 align=center>
+								<table border=1 height=130 align=center id="chose_box">
+									<tr>
+										<td width=150 align=center>
+											<a href="community.html"><img src="image\community_ch.png" height=70><br>커뮤니티</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width=150 align=center><a href="wargame.html"><img src="image\e.png" height=70><br>워게임</a></td>
+							<td width=150 align=center>
+								<div class="dropmenu">
+									<ul id="dm_ul">
+										<li><img src=image\security.png height=70><br>
+												<img src=image\d.png height=15> 해킹
+											<ul>
+												<li><a href="network.html">Network</a></li>
+												<li><a href="forensic.html">Forensic</a></li>
+												<li><a href="web.html">Web</a></li>
+												<li><a href="pwnable.html">Pwnable</a></li>
+												<li><a href="reversing.html">Reversing</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width=300>
+					<a href="http://www.casper.or.kr" target="_blank"><img src="image\hack.gif" alt="Support HackThisSite - Advertise with us!" title="casper" border=0 width=300 height=150></a>
+				</td>
+			</tr>
+		</table><br><br><br>
+		<table border=0 id="main_body" width=1300 height=500>
+			<tr>
+				<td align=center height=100>
+					<font size=10 color=#33ff33>게시판</font>
+				</td>
+			</tr>
+			<tr>
+				<td align=center valign=top>
+					<table border="1" width=1100 bgcolor=black height=300>
+							<tr align=center>
+								<td width=100>번호</td>
+								<td>제목</td>
+								<td>등록자</td>
+								<td>등록일</td>
+							</tr>
+							<tr align=center>
+								<td>1</td>
+								<td>‘2018 Hdac Hackathon The Arena’ 사전 교육 안내</td>
+								<td>상상앤컴퍼니</td>
+								<td>2018.06.08</td>
+							</tr>
+							<tr align=center>
+								<td>2</td>
+								<td>국내 최대 규모 블록체인 해커톤 ‘2018 Hdac Hackathon The Arena’가 개최됩니다!</td>
+								<td>상상앤컴퍼니</td>
+								<td>2018.06.08</td>
+							</tr>
+							<tr align=center>
+								<td >3</td>
+								<td>정보보호병 2018년 1회 모집공고</td>
+								<td>higgs</td>
+								<td>2018.06.24</td>
+							</tr>
+							<tr align=center>
+								<td>4</td>
+								<td>보안프로젝트 오픈 강의 모음</td>
+								<td>guddh's</td>
+								<td>2018.07.04</td>
+							</tr>
+							<tr align=center>
+								<td>5</td>
+								<td>xe3 업데이트 예정입니다</td>
+								<td>관리자</td>
+								<td>2018.07.13</td>
+							</tr>
+					</table><br>
+					<select name="search_target" >
+						<option value="title_content">제목+등록자</option>
+						<option value="title">제목</option>
+						<option value="content">내용</option>
+						<option value="comment">등록자</option>
+					</select>&nbsp;&nbsp;&nbsp;&nbsp;  
+					<input type="text" name="search_keyword" value="" title="검색" class="iText" placeholder="입력"> 
+					<button type="submit" class="btn">검색</button>&nbsp;&nbsp;&nbsp;&nbsp; 
+					<button type="submit" class="btn_1">글 쓰기</button><br><br>
+					<div class="pagination">
+						<a href="#"><-&nbsp;첫 페이지</a>
+						<strong><a href="#">1</a></strong>                  
+						<a href="#">2</a>                  
+						<a href="#">3</a>                  
+						<a href="#">4</a>                  
+						<a href="#">5</a>                  
+						<a href="#">6</a>                  
+						<a href="#">7</a>                  
+						<a href="#">8</a>                  
+						<a href="#">9</a>                  
+						<a href="#">10</a>               
+						<a href="#">끝 페이지&nbsp;-></a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<p id="saying">Hackers are not born. It is only made.</p><br><br><br><br>
+		<a href="#" class="top">- Top -</a>
+		</center>
+		<script type="text/javascript">
+			$(".dropmenu ul li").hover(function(){
+				$(this).find("ul").stop().fadeToggle(300);
+			});
+		</script>
+	<script>
+		$( document ).ready( function() {
+			$( window ).scroll( function() {
+				if ( $( this ).scrollTop() > 200 ) {
+					$( '.top' ).fadeIn();
+				} else {
+					$( '.top' ).fadeOut();
+				}
+			} );
+			$( '.top' ).click( function() {
+				$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+				return false;
+			} );
+		} );
+                </script>
+	</body>
+</html>
